@@ -12,6 +12,7 @@
 ## Table of Contents
 - [What is Git?](#what-is-git)
 - [Installing Git](#installing-git)
+- [Configuring Git](#configuring-git)
 
 ## What is Git?
 
@@ -19,4 +20,9 @@
 
 To install Git, first head to the [Git downloads page](https://git-scm.com/downloads) and download Git in accordance with your operating system. 
 
-
+## Configuring Git
+First, configure your git profile's name. 
+```
+git config --global user.name "Yourname"
+```
+Next, 
