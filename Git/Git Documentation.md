@@ -15,15 +15,26 @@
 - [Configuring Git](#configuring-git)
 
 ## What is Git?
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ## Installing Git
 
 To install Git, first head to the [Git downloads page](https://git-scm.com/downloads) and download Git in accordance with your operating system. 
 
 ## Configuring Git
-First, configure your git profile's name. 
+First, configure your name and email. 
 ```
 git config --global user.name "Yourname"
+
+git config --global user.email "Youremail"
 ```
-Next, 
+Next, configure your default editor. We recommend VSCode, but you can use any editor of your choice. 
+```
+git config --global core.editor "code --wait"
+```
+Finally, you have to configure a thing called autocrlf(which we don't understand exactly), so just copy and paste the following line onto your terminal depending on your operating system.
+```
+// Windows:
+git config --global core.autocrlf true
+// Mac or Linux:
+git config --global core.autocrlf input
+```
